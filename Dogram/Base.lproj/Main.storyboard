@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dog View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DogViewController" customModule="Dogram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="J1r-57-eBS">
+                                <rect key="frame" x="24" y="217" width="272" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NL0-iM-UL9">
+                                        <rect key="frame" x="0.0" y="0.0" width="120.5" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="AVm-Ia-Yup"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Previous"/>
+                                        <connections>
+                                            <action selector="previousTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2TM-sP-sYE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C90-7l-tLM">
+                                        <rect key="frame" x="151.5" y="0.0" width="120.5" height="54"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                        <connections>
+                                            <action selector="nextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l85-yP-9U0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a9W-13-BmU">
+                                <rect key="frame" x="0.0" y="20" width="320" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="yN9-CD-TsH"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b55-gL-CZj">
+                                <rect key="frame" x="24" y="279" width="272" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="v9J-mB-Yec"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6E-fi-CcS">
+                                <rect key="frame" x="110" y="341" width="100" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4Dr-VF-hdF"/>
+                                    <constraint firstAttribute="height" constant="54" id="rK6-Dp-YeI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <connections>
+                                    <action selector="submitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38g-Pk-g25"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J1r-57-eBS" firstAttribute="top" secondItem="a9W-13-BmU" secondAttribute="bottom" constant="-3.0000000000000568" id="2Sd-ou-44e"/>
+                            <constraint firstItem="J1r-57-eBS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="5XQ-BF-hBq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b55-gL-CZj" secondAttribute="trailing" constant="24" id="8xk-6E-kRg"/>
+                            <constraint firstItem="J6E-fi-CcS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FmQ-Qh-1WH"/>
+                            <constraint firstItem="b55-gL-CZj" firstAttribute="top" secondItem="J1r-57-eBS" secondAttribute="bottom" constant="8" id="Fyv-0G-nbR"/>
+                            <constraint firstItem="b55-gL-CZj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="KWe-AL-VAI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a9W-13-BmU" secondAttribute="trailing" id="NvQ-eq-Wfa"/>
+                            <constraint firstItem="J6E-fi-CcS" firstAttribute="top" secondItem="b55-gL-CZj" secondAttribute="bottom" constant="8" id="PTW-Up-jMT"/>
+                            <constraint firstItem="a9W-13-BmU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b9L-Dt-aG3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J1r-57-eBS" secondAttribute="trailing" constant="24" id="fNk-mT-3sp"/>
+                            <constraint firstItem="a9W-13-BmU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yBD-HD-pYY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="a9W-13-BmU" id="8Vq-ol-tBl"/>
+                        <outlet property="nextButton" destination="C90-7l-tLM" id="p7K-3Z-4Hw"/>
+                        <outlet property="numberInput" destination="b55-gL-CZj" id="8V7-UC-6Rs"/>
+                        <outlet property="previousButton" destination="NL0-iM-UL9" id="dqn-Gi-KJh"/>
+                        <outlet property="submitButton" destination="J6E-fi-CcS" id="eHk-Ip-CcP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-592" y="-29"/>
+        </scene>
+        <!--Dog List Controller-->
+        <scene sceneID="1Fb-un-LJ5">
+            <objects>
+                <viewController storyboardIdentifier="DogListController" id="yH6-px-OfD" customClass="DogListController" customModule="Dogram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Az-K2-TvL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5uf-Hz-Ezr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ba-TK-QEp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170.625" y="-30.633802816901408"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
