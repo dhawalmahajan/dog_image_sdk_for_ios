@@ -1,0 +1,15 @@
+{
+  "originHash" : "192ccae3983e7735499f13ccc866b75abaac66c985b31221120912cf79492dd1",
+  "pins" : [
+    {
+      "identity" : "dog_image_sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dhawalmahajan/dog_image_sdk",
+      "state" : {
+        "branch" : "main",
+        "revision" : "41ae4e6025bf07da870868a8e8d26b43540f4d2d"
+      }
+    }
+  ],
+  "version" : 3
+}

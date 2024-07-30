@@ -9,7 +9,7 @@ import UIKit
 import DogImage
 protocol DogService {
     func getNextImage() async -> UIImage?
-    func getImages(number: Int) async -> [UIImage?]
+//    func getImages(number: Int) async -> [UIImage?]
     func getPreviousImage() async -> UIImage?
 }
 
@@ -19,27 +19,17 @@ final class DogViewModel: DogService {
     private (set) var imagesUrls:[URL?] = []
     
   
-    private let dogLibrary: DogImageLibrary = DogImageLibrary()
+     let dogLibrary: DogImageLibrary = DogImageLibrary()
     func getNextImage() async -> UIImage? {
         await loadImage(from: dogLibrary.getNextImage())
     }
     
-    func getImages(number: Int) async  -> [UIImage?] {
-        imagesUrls = dogLibrary.getImages(number: number)
-        
-           var images: [UIImage?] = []
-        for url in imagesUrls {
-            let image = await loadImage(from: url)
-            images.append(image)
-            
-        }
-            return images
-    }
+   
     
     func getPreviousImage() async -> UIImage? {
         await loadImage(from: dogLibrary.getPreviousImage())
     }
-
+    
     private func loadImage(from url: URL? = nil) async -> UIImage? {
         guard let imageURL = url ?? dogLibrary.getImage() else { return nil }
         do {

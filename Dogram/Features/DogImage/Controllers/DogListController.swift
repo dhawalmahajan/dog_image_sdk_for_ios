@@ -7,13 +7,8 @@
 
 import Foundation
 import UIKit
-final class DogListViewModel {
-    private(set) var images: [URL?] = []
-    init(images: [URL?]) {
-        self.images = images
-    }
-    
-}
+import DogImage
+
 class DogListController: UIViewController {
     static let identifier = "DogListController"
     private let viewModel: DogListViewModel
@@ -43,6 +38,10 @@ class DogListController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpCollectionView()
+        Task {
+           await viewModel.getImages()
+        }
+        collectionView.reloadData()
     }
     private func setUpCollectionView() {
         view.addSubview(collectionView)
@@ -62,8 +61,7 @@ extension DogListController: UICollectionViewDelegate,  UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DogImageCollectionViewCell.identifier, for: indexPath) as? DogImageCollectionViewCell else { return UICollectionViewCell()}
-           return cell
+        cell.imageView.image = viewModel.images[indexPath.row]
+        return cell
     }
-    
-    
 }

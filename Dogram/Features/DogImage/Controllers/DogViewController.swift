@@ -36,12 +36,10 @@ class DogViewController: UIViewController {
     }
     
     @IBAction func submitTapped(_ sender: UIButton) {
-//        guard let count = Int( numberInput.text ?? "0") else { return }
-        let vc = DogListController(with: .init(images: viewModel.imagesUrls))
+        guard let count = Int( numberInput.text ?? "0") else { return }
+        let vc = DogListController(with: .init(imageCount: count, dogLibrary: viewModel.dogLibrary))
         navigationController?.pushViewController(vc, animated: true)
-//        guard let vc = storyboard?.instantiateViewController(withIdentifier: DogListController.identifier) as? DogListController else {return }
-        
-        show(vc, sender: self)
+
     }
 }
 

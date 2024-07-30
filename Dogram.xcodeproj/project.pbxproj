@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		024007BF2C5935B100F01433 /* DogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024007BE2C5935B100F01433 /* DogListViewModel.swift */; };
+		024FDD292C590A88004EA8C8 /* DogImage in Frameworks */ = {isa = PBXBuildFile; productRef = 024FDD282C590A88004EA8C8 /* DogImage */; };
+		024FDD2B2C591172004EA8C8 /* DogViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FDD2A2C591172004EA8C8 /* DogViewModelTest.swift */; };
 		025E77552C58AFC000662E10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E77542C58AFC000662E10 /* AppDelegate.swift */; };
 		025E77572C58AFC000662E10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E77562C58AFC000662E10 /* SceneDelegate.swift */; };
 		025E77592C58AFC000662E10 /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E77582C58AFC000662E10 /* DogViewController.swift */; };
@@ -41,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		024007BE2C5935B100F01433 /* DogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewModel.swift; sourceTree = "<group>"; };
+		024FDD2A2C591172004EA8C8 /* DogViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModelTest.swift; sourceTree = "<group>"; };
 		025E77512C58AFC000662E10 /* Dogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025E77542C58AFC000662E10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		025E77562C58AFC000662E10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024FDD292C590A88004EA8C8 /* DogImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +92,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024FDD2C2C5911CC004EA8C8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		025E77482C58AFC000662E10 = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +137,9 @@
 		025E776D2C58AFC100662E10 /* DogramTests */ = {
 			isa = PBXGroup;
 			children = (
+				024FDD2C2C5911CC004EA8C8 /* Mocks */,
 				025E776E2C58AFC100662E10 /* DogramTests.swift */,
+				024FDD2A2C591172004EA8C8 /* DogViewModelTest.swift */,
 			);
 			path = DogramTests;
 			sourceTree = "<group>";
@@ -169,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				025E778D2C58BC9900662E10 /* DogViewModel.swift */,
+				024007BE2C5935B100F01433 /* DogListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -199,6 +215,7 @@
 			);
 			name = Dogram;
 			packageProductDependencies = (
+				024FDD282C590A88004EA8C8 /* DogImage */,
 			);
 			productName = Dogram;
 			productReference = 025E77512C58AFC000662E10 /* Dogram.app */;
@@ -273,6 +290,7 @@
 			);
 			mainGroup = 025E77482C58AFC000662E10;
 			packageReferences = (
+				024FDD272C590A88004EA8C8 /* XCRemoteSwiftPackageReference "dog_image_sdk" */,
 			);
 			productRefGroup = 025E77522C58AFC000662E10 /* Products */;
 			projectDirPath = "";
@@ -321,6 +339,7 @@
 				025E77592C58AFC000662E10 /* DogViewController.swift in Sources */,
 				025E77902C58D97E00662E10 /* DogListController.swift in Sources */,
 				025E775F2C58AFC000662E10 /* Dogram.xcdatamodeld in Sources */,
+				024007BF2C5935B100F01433 /* DogListViewModel.swift in Sources */,
 				025E778E2C58BC9900662E10 /* DogViewModel.swift in Sources */,
 				025E77552C58AFC000662E10 /* AppDelegate.swift in Sources */,
 				025E77952C58E33200662E10 /* DogImageCollectionViewCell.swift in Sources */,
@@ -333,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				025E776F2C58AFC100662E10 /* DogramTests.swift in Sources */,
+				024FDD2B2C591172004EA8C8 /* DogViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +534,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,6 +563,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -671,6 +693,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		024FDD272C590A88004EA8C8 /* XCRemoteSwiftPackageReference "dog_image_sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dhawalmahajan/dog_image_sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		024FDD282C590A88004EA8C8 /* DogImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 024FDD272C590A88004EA8C8 /* XCRemoteSwiftPackageReference "dog_image_sdk" */;
+			productName = DogImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		025E775D2C58AFC000662E10 /* Dogram.xcdatamodeld */ = {
