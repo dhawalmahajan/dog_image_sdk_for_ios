@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		025E77552C58AFC000662E10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E77542C58AFC000662E10 /* AppDelegate.swift */; };
+		025E77572C58AFC000662E10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E77562C58AFC000662E10 /* SceneDelegate.swift */; };
+		025E77592C58AFC000662E10 /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E77582C58AFC000662E10 /* DogViewController.swift */; };
+		025E775C2C58AFC000662E10 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 025E775B2C58AFC000662E10 /* Base */; };
+		025E775F2C58AFC000662E10 /* Dogram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 025E775D2C58AFC000662E10 /* Dogram.xcdatamodeld */; };
+		025E77612C58AFC100662E10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025E77602C58AFC100662E10 /* Assets.xcassets */; };
+		025E77642C58AFC100662E10 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 025E77632C58AFC100662E10 /* Base */; };
+		025E776F2C58AFC100662E10 /* DogramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E776E2C58AFC100662E10 /* DogramTests.swift */; };
+		025E77792C58AFC100662E10 /* DogramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E77782C58AFC100662E10 /* DogramUITests.swift */; };
+		025E777B2C58AFC100662E10 /* DogramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E777A2C58AFC100662E10 /* DogramUITestsLaunchTests.swift */; };
+		025E778E2C58BC9900662E10 /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E778D2C58BC9900662E10 /* DogViewModel.swift */; };
+		025E77902C58D97E00662E10 /* DogListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E778F2C58D97E00662E10 /* DogListController.swift */; };
+		025E77942C58E33200662E10 /* DogImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025E77932C58E33200662E10 /* DogImageCollectionViewCell.xib */; };
+		025E77952C58E33200662E10 /* DogImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E77922C58E33200662E10 /* DogImageCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		025E776B2C58AFC100662E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 025E77492C58AFC000662E10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025E77502C58AFC000662E10;
+			remoteInfo = Dogram;
+		};
+		025E77752C58AFC100662E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 025E77492C58AFC000662E10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025E77502C58AFC000662E10;
+			remoteInfo = Dogram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		025E77512C58AFC000662E10 /* Dogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		025E77542C58AFC000662E10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		025E77562C58AFC000662E10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		025E77582C58AFC000662E10 /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
+		025E775B2C58AFC000662E10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		025E775E2C58AFC000662E10 /* Dogram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dogram.xcdatamodel; sourceTree = "<group>"; };
+		025E77602C58AFC100662E10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		025E77632C58AFC100662E10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		025E77652C58AFC100662E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025E776A2C58AFC100662E10 /* DogramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		025E776E2C58AFC100662E10 /* DogramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogramTests.swift; sourceTree = "<group>"; };
+		025E77742C58AFC100662E10 /* DogramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		025E77782C58AFC100662E10 /* DogramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogramUITests.swift; sourceTree = "<group>"; };
+		025E777A2C58AFC100662E10 /* DogramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		025E778D2C58BC9900662E10 /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
+		025E778F2C58D97E00662E10 /* DogListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListController.swift; sourceTree = "<group>"; };
+		025E77922C58E33200662E10 /* DogImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		025E77932C58E33200662E10 /* DogImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogImageCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		025E774E2C58AFC000662E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025E77672C58AFC100662E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025E77712C58AFC100662E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		025E77482C58AFC000662E10 = {
+			isa = PBXGroup;
+			children = (
+				025E77532C58AFC000662E10 /* Dogram */,
+				025E776D2C58AFC100662E10 /* DogramTests */,
+				025E77772C58AFC100662E10 /* DogramUITests */,
+				025E77522C58AFC000662E10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		025E77522C58AFC000662E10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				025E77512C58AFC000662E10 /* Dogram.app */,
+				025E776A2C58AFC100662E10 /* DogramTests.xctest */,
+				025E77742C58AFC100662E10 /* DogramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		025E77532C58AFC000662E10 /* Dogram */ = {
+			isa = PBXGroup;
+			children = (
+				025E77892C58B71600662E10 /* Features */,
+				025E77542C58AFC000662E10 /* AppDelegate.swift */,
+				025E77562C58AFC000662E10 /* SceneDelegate.swift */,
+				025E775A2C58AFC000662E10 /* Main.storyboard */,
+				025E77602C58AFC100662E10 /* Assets.xcassets */,
+				025E77622C58AFC100662E10 /* LaunchScreen.storyboard */,
+				025E77652C58AFC100662E10 /* Info.plist */,
+				025E775D2C58AFC000662E10 /* Dogram.xcdatamodeld */,
+			);
+			path = Dogram;
+			sourceTree = "<group>";
+		};
+		025E776D2C58AFC100662E10 /* DogramTests */ = {
+			isa = PBXGroup;
+			children = (
+				025E776E2C58AFC100662E10 /* DogramTests.swift */,
+			);
+			path = DogramTests;
+			sourceTree = "<group>";
+		};
+		025E77772C58AFC100662E10 /* DogramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				025E77782C58AFC100662E10 /* DogramUITests.swift */,
+				025E777A2C58AFC100662E10 /* DogramUITestsLaunchTests.swift */,
+			);
+			path = DogramUITests;
+			sourceTree = "<group>";
+		};
+		025E77892C58B71600662E10 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				025E778A2C58BC7300662E10 /* DogImage */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		025E778A2C58BC7300662E10 /* DogImage */ = {
+			isa = PBXGroup;
+			children = (
+				025E77912C58E30F00662E10 /* Views */,
+				025E778C2C58BC8500662E10 /* ViewModels */,
+				025E778B2C58BC7900662E10 /* Controllers */,
+			);
+			path = DogImage;
+			sourceTree = "<group>";
+		};
+		025E778B2C58BC7900662E10 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				025E77582C58AFC000662E10 /* DogViewController.swift */,
+				025E778F2C58D97E00662E10 /* DogListController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		025E778C2C58BC8500662E10 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				025E778D2C58BC9900662E10 /* DogViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		025E77912C58E30F00662E10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				025E77922C58E33200662E10 /* DogImageCollectionViewCell.swift */,
+				025E77932C58E33200662E10 /* DogImageCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		025E77502C58AFC000662E10 /* Dogram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025E777E2C58AFC100662E10 /* Build configuration list for PBXNativeTarget "Dogram" */;
+			buildPhases = (
+				025E774D2C58AFC000662E10 /* Sources */,
+				025E774E2C58AFC000662E10 /* Frameworks */,
+				025E774F2C58AFC000662E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dogram;
+			packageProductDependencies = (
+			);
+			productName = Dogram;
+			productReference = 025E77512C58AFC000662E10 /* Dogram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		025E77692C58AFC100662E10 /* DogramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025E77812C58AFC100662E10 /* Build configuration list for PBXNativeTarget "DogramTests" */;
+			buildPhases = (
+				025E77662C58AFC100662E10 /* Sources */,
+				025E77672C58AFC100662E10 /* Frameworks */,
+				025E77682C58AFC100662E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				025E776C2C58AFC100662E10 /* PBXTargetDependency */,
+			);
+			name = DogramTests;
+			productName = DogramTests;
+			productReference = 025E776A2C58AFC100662E10 /* DogramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		025E77732C58AFC100662E10 /* DogramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025E77842C58AFC100662E10 /* Build configuration list for PBXNativeTarget "DogramUITests" */;
+			buildPhases = (
+				025E77702C58AFC100662E10 /* Sources */,
+				025E77712C58AFC100662E10 /* Frameworks */,
+				025E77722C58AFC100662E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				025E77762C58AFC100662E10 /* PBXTargetDependency */,
+			);
+			name = DogramUITests;
+			productName = DogramUITests;
+			productReference = 025E77742C58AFC100662E10 /* DogramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		025E77492C58AFC000662E10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					025E77502C58AFC000662E10 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					025E77692C58AFC100662E10 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 025E77502C58AFC000662E10;
+					};
+					025E77732C58AFC100662E10 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 025E77502C58AFC000662E10;
+					};
+				};
+			};
+			buildConfigurationList = 025E774C2C58AFC000662E10 /* Build configuration list for PBXProject "Dogram" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 025E77482C58AFC000662E10;
+			packageReferences = (
+			);
+			productRefGroup = 025E77522C58AFC000662E10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				025E77502C58AFC000662E10 /* Dogram */,
+				025E77692C58AFC100662E10 /* DogramTests */,
+				025E77732C58AFC100662E10 /* DogramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		025E774F2C58AFC000662E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025E77612C58AFC100662E10 /* Assets.xcassets in Resources */,
+				025E77642C58AFC100662E10 /* Base in Resources */,
+				025E775C2C58AFC000662E10 /* Base in Resources */,
+				025E77942C58E33200662E10 /* DogImageCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025E77682C58AFC100662E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025E77722C58AFC100662E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		025E774D2C58AFC000662E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025E77592C58AFC000662E10 /* DogViewController.swift in Sources */,
+				025E77902C58D97E00662E10 /* DogListController.swift in Sources */,
+				025E775F2C58AFC000662E10 /* Dogram.xcdatamodeld in Sources */,
+				025E778E2C58BC9900662E10 /* DogViewModel.swift in Sources */,
+				025E77552C58AFC000662E10 /* AppDelegate.swift in Sources */,
+				025E77952C58E33200662E10 /* DogImageCollectionViewCell.swift in Sources */,
+				025E77572C58AFC000662E10 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025E77662C58AFC100662E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025E776F2C58AFC100662E10 /* DogramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025E77702C58AFC100662E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025E777B2C58AFC100662E10 /* DogramUITestsLaunchTests.swift in Sources */,
+				025E77792C58AFC100662E10 /* DogramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		025E776C2C58AFC100662E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 025E77502C58AFC000662E10 /* Dogram */;
+			targetProxy = 025E776B2C58AFC100662E10 /* PBXContainerItemProxy */;
+		};
+		025E77762C58AFC100662E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 025E77502C58AFC000662E10 /* Dogram */;
+			targetProxy = 025E77752C58AFC100662E10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		025E775A2C58AFC000662E10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				025E775B2C58AFC000662E10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		025E77622C58AFC100662E10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				025E77632C58AFC100662E10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		025E777C2C58AFC100662E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		025E777D2C58AFC100662E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		025E777F2C58AFC100662E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83R323ZA68;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dogram/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.725f3f561da56c08.Dogram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		025E77802C58AFC100662E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83R323ZA68;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dogram/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.725f3f561da56c08.Dogram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		025E77822C58AFC100662E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83R323ZA68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.725f3f561da56c08.DogramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dogram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dogram";
+			};
+			name = Debug;
+		};
+		025E77832C58AFC100662E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83R323ZA68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.725f3f561da56c08.DogramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dogram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dogram";
+			};
+			name = Release;
+		};
+		025E77852C58AFC100662E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83R323ZA68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.725f3f561da56c08.DogramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dogram;
+			};
+			name = Debug;
+		};
+		025E77862C58AFC100662E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83R323ZA68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.725f3f561da56c08.DogramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dogram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		025E774C2C58AFC000662E10 /* Build configuration list for PBXProject "Dogram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025E777C2C58AFC100662E10 /* Debug */,
+				025E777D2C58AFC100662E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025E777E2C58AFC100662E10 /* Build configuration list for PBXNativeTarget "Dogram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025E777F2C58AFC100662E10 /* Debug */,
+				025E77802C58AFC100662E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025E77812C58AFC100662E10 /* Build configuration list for PBXNativeTarget "DogramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025E77822C58AFC100662E10 /* Debug */,
+				025E77832C58AFC100662E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025E77842C58AFC100662E10 /* Build configuration list for PBXNativeTarget "DogramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025E77852C58AFC100662E10 /* Debug */,
+				025E77862C58AFC100662E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		025E775D2C58AFC000662E10 /* Dogram.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				025E775E2C58AFC000662E10 /* Dogram.xcdatamodel */,
+			);
+			currentVersion = 025E775E2C58AFC000662E10 /* Dogram.xcdatamodel */;
+			path = Dogram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 025E77492C58AFC000662E10 /* Project object */;
+}
