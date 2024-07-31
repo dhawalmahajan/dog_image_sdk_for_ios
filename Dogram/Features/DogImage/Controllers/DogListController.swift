@@ -61,7 +61,7 @@ extension DogListController: UICollectionViewDelegate,  UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DogImageCollectionViewCell.identifier, for: indexPath) as? DogImageCollectionViewCell else { return UICollectionViewCell()}
-        cell.imageView.image = viewModel.images[indexPath.row]
+//        cell.imageView.image = viewModel.images[indexPath.row]
         return cell
     }
 }

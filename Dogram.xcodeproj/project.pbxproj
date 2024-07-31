@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		024007BF2C5935B100F01433 /* DogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024007BE2C5935B100F01433 /* DogListViewModel.swift */; };
+		0245CC882C59F11400608989 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0245CC872C59F11400608989 /* CoreDataStack.swift */; };
+		0245CC8B2C59F18100608989 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0245CC8A2C59F18100608989 /* DogImage.swift */; };
+		0245CC8D2C59F1A200608989 /* CoreDataDogImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0245CC8C2C59F1A200608989 /* CoreDataDogImageRepository.swift */; };
 		024FDD292C590A88004EA8C8 /* DogImage in Frameworks */ = {isa = PBXBuildFile; productRef = 024FDD282C590A88004EA8C8 /* DogImage */; };
 		024FDD2B2C591172004EA8C8 /* DogViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FDD2A2C591172004EA8C8 /* DogViewModelTest.swift */; };
 		025E77552C58AFC000662E10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E77542C58AFC000662E10 /* AppDelegate.swift */; };
@@ -24,6 +27,7 @@
 		025E77902C58D97E00662E10 /* DogListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E778F2C58D97E00662E10 /* DogListController.swift */; };
 		025E77942C58E33200662E10 /* DogImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025E77932C58E33200662E10 /* DogImageCollectionViewCell.xib */; };
 		025E77952C58E33200662E10 /* DogImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025E77922C58E33200662E10 /* DogImageCollectionViewCell.swift */; };
+		0298E2D12C59F5C5006162BF /* DogImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0298E2D02C59F5C5006162BF /* DogImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		024007BE2C5935B100F01433 /* DogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewModel.swift; sourceTree = "<group>"; };
+		0245CC872C59F11400608989 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0245CC8A2C59F18100608989 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		0245CC8C2C59F1A200608989 /* CoreDataDogImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDogImageRepository.swift; sourceTree = "<group>"; };
 		024FDD2A2C591172004EA8C8 /* DogViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModelTest.swift; sourceTree = "<group>"; };
 		025E77512C58AFC000662E10 /* Dogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025E77542C58AFC000662E10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +71,7 @@
 		025E778F2C58D97E00662E10 /* DogListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListController.swift; sourceTree = "<group>"; };
 		025E77922C58E33200662E10 /* DogImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		025E77932C58E33200662E10 /* DogImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		0298E2D02C59F5C5006162BF /* DogImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0245CC852C59F0A400608989 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0245CC862C59F0AB00608989 /* CoreDataService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0245CC862C59F0AB00608989 /* CoreDataService */ = {
+			isa = PBXGroup;
+			children = (
+				0298E2D32C59F91A006162BF /* ViewModel */,
+				0298E2D22C59F90C006162BF /* Repository */,
+				0245CC892C59F16D00608989 /* Model */,
+				0245CC872C59F11400608989 /* CoreDataStack.swift */,
+			);
+			path = CoreDataService;
+			sourceTree = "<group>";
+		};
+		0245CC892C59F16D00608989 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0245CC8A2C59F18100608989 /* DogImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		024FDD2C2C5911CC004EA8C8 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +157,7 @@
 		025E77532C58AFC000662E10 /* Dogram */ = {
 			isa = PBXGroup;
 			children = (
+				0245CC852C59F0A400608989 /* Services */,
 				025E77892C58B71600662E10 /* Features */,
 				025E77542C58AFC000662E10 /* AppDelegate.swift */,
 				025E77562C58AFC000662E10 /* SceneDelegate.swift */,
@@ -196,6 +232,22 @@
 				025E77932C58E33200662E10 /* DogImageCollectionViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0298E2D22C59F90C006162BF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0245CC8C2C59F1A200608989 /* CoreDataDogImageRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0298E2D32C59F91A006162BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0298E2D02C59F5C5006162BF /* DogImageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,8 +391,12 @@
 				025E77592C58AFC000662E10 /* DogViewController.swift in Sources */,
 				025E77902C58D97E00662E10 /* DogListController.swift in Sources */,
 				025E775F2C58AFC000662E10 /* Dogram.xcdatamodeld in Sources */,
+				0298E2D12C59F5C5006162BF /* DogImageViewModel.swift in Sources */,
+				0245CC882C59F11400608989 /* CoreDataStack.swift in Sources */,
 				024007BF2C5935B100F01433 /* DogListViewModel.swift in Sources */,
 				025E778E2C58BC9900662E10 /* DogViewModel.swift in Sources */,
+				0245CC8B2C59F18100608989 /* DogImage.swift in Sources */,
+				0245CC8D2C59F1A200608989 /* CoreDataDogImageRepository.swift in Sources */,
 				025E77552C58AFC000662E10 /* AppDelegate.swift in Sources */,
 				025E77952C58E33200662E10 /* DogImageCollectionViewCell.swift in Sources */,
 				025E77572C58AFC000662E10 /* SceneDelegate.swift in Sources */,
